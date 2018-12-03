@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export TERM=xterm
+
+termite -e "bash -c \"echo -en \\\"\\033]0;shell: $1\\007\\\"; export TERM=termite; ssh -i privatekey -v user@$1; echo [script finished]; sleep infinity\""

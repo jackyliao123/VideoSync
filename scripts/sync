@@ -1,0 +1,3 @@
+#!/bin/bash
+
+termite -e "bash -c \"echo -en \\\"\\033]0;sync: $1\\007\\\"; rsync --delete -ae \\\"ssh -i privatekey\\\" videos user@$1:~/videosync --inplace -i --progress --stats -v; echo [script finished]; sleep infinity\""
