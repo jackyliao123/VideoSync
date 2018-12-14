@@ -28,7 +28,7 @@ Running server:
 
 Running client:
 
-    ./start_client.sh [server address] [server port]speedspeedspeed
+    ./start_client.sh [server address] [server port]
 
 *Notes*: 
 - For the current setup, the audio will only be played on the server. This behaviour can be changed by modifying the arguments passed to [mpv](https://mpv.io/)  in `VideoSyncServer.java` and `VideoSyncClient.java`.
